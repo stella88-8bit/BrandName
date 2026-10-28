@@ -271,6 +271,18 @@ header {
     gap: 10px;
 }
 
+.special {
+    flex-wrap: nowrap;
+}
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 500px) {
     .container {
@@ -484,25 +496,11 @@ header {
         border-radius: 5px;
     }
 
-    .white-third > img {
-        width: 100px;
-        height: 100px;
-        object-fit: cover;
-        border-radius: 50%;
-    }
-
     .stars {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 5px;
-    }
-
-    .star img {
-        width: 24px;
-        height: 24px;
-        object-fit: contain;
-        display: block;
     }
 
 }
