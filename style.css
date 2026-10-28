@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    background-color: #252B42;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.nav-i {
+    display: none;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.right-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.become {
+    border: 1px solid #23A6F0;
+    border-radius: 5px;
+    padding: 15px 20px;
+    background-color: #23A6F0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-arrow-right {
+    margin-left: 10px;
+    color: white;
+}
+
+.first {
+    background-color: #252B42;
+    color: white;
+    overflow: hidden;
+    padding-bottom: 100px;
+}
+
+.first-section {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 650px;
+}
+
+.left-first > h1 {
+    font-size: 45px;
+    margin: 0;
+}
+
+.left-first > p {
+    font-size: 20px;
+    margin: 0;
+}
+
+.left-first {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 25px;
+    position: relative;
+    z-index: 2;
+}
+
+.first-btns {
+    width: 310px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.get-quote,
+.lrn-more {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 45px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.get-quote {
+    border: 1px solid #23A6F0;
+    background-color: #23A6F0;
+}
+
+.lrn-more {
+    border: 1px solid white;
+}
+
+.left-bcgnd {
+    object-fit: contain;
+    position: absolute;
+    width: 260px;
+    z-index: 1;
+    left: -270px;
+    top: -150px;
+}
+
+.right-first img {
+    position: absolute;
+    display: block;
+    max-width: none;
+    height: auto;
+}
+
+.mockup, .mockup-bcgnd1, .mockup-bcgrd2 {
+    object-fit: contain;
+    position: absolute;
+    left: 600px;
+    top: 150px;
+}
+
+.mockup-bcgnd1, .mockup-bcgrd2 {
+    width: 40%;
+}
+
+.mockup {
+    z-index: 1;
+    top: 80px;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 500px) {
+    .container {
+        max-width: 350px;
+        margin: auto;
+    }
+    .nav-i {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .right-nav {
+        display: none;
+    }
+
+    .header {
+        flex-wrap: wrap;
+    }
+
+    .nav {
+        flex-basis: 100%;
+        font-size: 28px;
+        margin: 40px auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .first-section {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .first {
+        overflow: hidden;
+    }
+
+    .first-section {
+        flex-direction: column;
+        justify-content: center;
+        min-height: auto;
+        padding: 70px 0 40px;
+        gap: 30px;
+    }
+
+    .left-first {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .left-first > h1 {
+        font-size: 32px;
+        max-width: 320px;
+    }
+
+    .left-first > p {
+        font-size: 16px;
+    }
+
+    .first-btns {
+        width: auto;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .get-quote,
+    .lrn-more {
+        padding: 12px 24px;
+    }
+
+    .left-bcgnd {
+        width: 180px;
+        left: -150px;
+        top: 30%;
+    }
+
+    .right-first {
+        position: relative;
+        width: 100%;
+        max-width: 350px;
+        height: 380px;
+    }
+
+    .mockup-bcgnd1,
+    .mockup-bcgrd2 {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        left: 0;
+        top: 30px;
+    }
+
+    .mockup {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        left: -1%;
+        top: 0;
+        z-index: 2;
+    }
+}
